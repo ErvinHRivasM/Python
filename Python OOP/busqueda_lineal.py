@@ -24,6 +24,6 @@ class Busqueda:
 list_size = int(input('De que tamano sera la lista? '))
 objetivo = int(input("Que numero quieres encontra? "))
 lista = [random.randint(0, 100) for i in range(list_size)]
-encontrado = Busqueda(lista, objetivo)
-encontrado.busqueda_lineal()
+busqueda = Busqueda(lista, objetivo)
+encontrado = busqueda.busqueda_lineal()
 print(f'El elemento  {objetivo} {"esta" if encontrado else "no esta"} en la lista')
